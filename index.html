@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+   <script>
+    function result(){
+        var a=parseInt(document.getElementById("fnum").value);
+        var b=parseInt(document.getElementById("snum").value);
+    
+        add=a+b;
+        document.getElementById("result").innerText="Result =" + add;
+    
+    }
+</script> 
+
+</head>
+<body>
+    <center>
+        <h1>Add anything</h1>
+        <form>
+            <input type="text" id="fnum" placeholder="Enter your first number"><br><br>
+            <input type="text" id="snum" placeholder="Enter your second number"><br><br>
+           
+        </form>
+        <button onClick="result()" id="btn">Calculate</button><br>
+        <p id="result">Result =</p>
+    </center>
+</body>
+</html>
